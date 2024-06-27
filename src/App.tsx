@@ -1,5 +1,6 @@
 import {
   createBrowserRouter,
+  createHashRouter,
   Navigate,
   RouterProvider,
 } from "react-router-dom";
@@ -29,7 +30,7 @@ function RouterWrapper() {
   const eventsContext = useContext(EventContext);
   const hasSeenGreeting = localStorage.getItem("hasSeenGreeting");
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       index: true,
       element: hasSeenGreeting ? (
