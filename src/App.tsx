@@ -1,5 +1,4 @@
 import {
-  createBrowserRouter,
   createHashRouter,
   Navigate,
   RouterProvider,
